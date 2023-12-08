@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr 2fr;
+    height: 900px;
+}
+
+header {
+    background-color: #7ea1ff;
+    display: grid;
+    place-content: center;
+}
+
+nav {
+   background-color: #fcff70; 
+   display: grid;
+    place-content: center;
+}
+
+#carrousel {
+    background-color: #ff966c;
+    display: grid;
+    place-content: center;
+}
+
+section {
+    background-color: #6affaa;
+    text-align: center;
+}
+
+section h2 {
+    margin: 15px;
+}
+section div {
+    display: flex;
+    justify-content: space-around;
+}
+article {
+    background-color: #00d456;
+    width: 300px;
+    height: 400px;
+    display: grid;
+    place-content: center;
+}
