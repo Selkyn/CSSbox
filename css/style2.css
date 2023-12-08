@@ -1,0 +1,28 @@
+body {
+    width: 1000px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.3fr 2fr;
+    grid-template-areas: "header header header"
+                        "nav main aside";
+}
+
+header {
+    background-color: #ff5252;
+    grid-area: header;
+}
+
+nav {
+    background-color: #5a8cff;
+    grid-area: nav;
+}
+ main {
+    background-color: #5ade84;
+    grid-area:  main;
+ }
+
+aside {
+    background-color: #a57342;
+    grid-area: aside;
+}

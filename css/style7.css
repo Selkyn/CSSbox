@@ -1,0 +1,95 @@
+body {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.15fr 0.5fr 0.15fr 2fr;
+    border : 5px solid blueviolet;
+    position: relative;
+    
+}
+
+#main-header {
+    background-color: grey;
+}
+
+#little-section {
+    background-color: aqua;
+}
+
+nav {
+    background-color: darkgray;
+}
+
+footer {
+    width: 1000px;
+    height: 200px;
+    border: 5px solid cyan;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-section {
+    border: 5px solid greenyellow;
+    width: 700px;
+    margin: 5px;
+}
+
+/*Container*/
+.container {
+    width: 700px;
+    height: 725px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: "container-header container-header"
+                        "container-section container-aside";
+    border : 5px solid red;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
+
+#container-header {
+    border : 5px solid yellow;
+    grid-area: container-header;
+    margin: 5px;
+}
+
+#container-section {
+    border : 5px solid green;
+    grid-area: container-section;
+    display: flex;
+    align-items: end;
+    margin: 5px;
+}
+
+#container-article {
+    border : 5px solid blue;
+    height: 300px;
+    width: 100%;
+    margin: 5px;
+}
+
+#container-aside {
+    border : 5px solid orange;
+    grid-area: container-aside;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#subscribe, #popular, #contributors {
+    border : 5px  solid blueviolet;
+    height: 75px;
+    text-align: center;
+    margin: 5px;
+}
+

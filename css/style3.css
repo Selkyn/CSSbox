@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 500px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 0.2fr;
+    grid-template-areas: "nav main"
+                        "footer footer";
+}
+
+nav {
+    background-color: cyan;
+    grid-area: nav;
+}
+
+main {
+    background-color: blueviolet;
+    grid-area: main;
+}
+
+footer {
+    background-color: yellow;
+    grid-area: footer;
+}

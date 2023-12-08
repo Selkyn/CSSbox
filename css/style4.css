@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    width: 1000px;
+    height: 650px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.2fr 3fr 0.5fr;
+    border: 2px solid black;
+}
+
+header {
+    background-color: cyan;
+
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+main {
+    background-color: #f7c600;
+    width: 970px;
+    height: 430px;
+    margin: auto;
+}
+footer {
+    background-color: cyan;
+}

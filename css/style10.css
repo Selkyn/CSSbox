@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    justify-content: center;
+}
+section {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 15px;
+    margin: auto;
+}
+h2 {
+    color: #7b2d53;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    text-decoration: underline overline black;
+}
+li {
+    line-height: 30px;
+}
+
+#dev-lvl {
+    display: flex;
+    align-items: center;
+}
+
+#dev-lvl input {
+    margin-left: 15px;
+}
+
+#required-field {
+    font-style: italic;
+}
+

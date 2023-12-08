@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style10.css">
+    <title>formulaire</title>
+</head>
+
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <!-- premier form -->
+    <section>
+        <h2>Information personelle</h2>
+        <form action="" name="contact" method="post">
+            <ul>
+                <li>
+                    <label for="civilite">Civilité * :</label>
+                    <select name="civilite" id="civilite" required>
+                        <option value=""></option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="nom">Nom * :</label>
+                    <input type="text" name="nom" required placeholder="Votre Nom ici">
+                </li>
+                <li>
+                    <label for="prenom">Prenom * :</label>
+                    <input type="text" name="prenom" required placeholder="Votre Prénom ici">
+                </li>
+                <li>
+                    <label for="naissance">Date de naissance * :</label>
+                    <input type="date" name="naissance" required>
+                </li>
+                <li>
+                    <label for="phone-fix">Numero de téléphone :</label>
+                    <input type="text" name="phone-fix">
+                </li>
+                <li>
+                    <label for="phone">Numero de téléphone :</label>
+                    <input type="text" name="phone" required>
+                </li>
+
+                <li id="adress">
+                    <label for="num-rue">Numéro de rue * :</label>
+                    <input type="text" name="num-rue" required placeholder="N°">
+                    <label for="nom-rue">Nom de rue * :</label>
+                    <input type="text" name="nom-rue" required placeholder="Nom de rue">
+                </li>
+                <li>
+                    <label for="postal">Code postal * :</label>
+                    <input type="number" name="postal" required placeholder="Votre code postal ici">
+                </li>
+
+                <li>
+                    <label for="ville">Ville * :</label>
+                    <input type="text" name="ville" required placeholder="Votre Ville ici">
+                </li>
+                <li>
+                    <label for="pseudo" class="gras">Pseudo * :</label>
+                    <input type="text" name="pseudo" required placeholder="Entrer votre pseudo ici">
+                </li>
+                <li>
+                    <label for="password" class="gras">Mot de passe * :</label>
+                    <input type="password" name="password" required placeholder="Entrer votre mot de passe ici">
+                    <input type="submit" value="Soumettre">
+                    <input type="checkbox" name="souvenir">
+                    <label for="souvenir">Se souvenir de moi</label>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    <!-- 2eme formulaire -->
+    <section>
+        <h2>Information complémentaire</h2>
+
+        <div id="dev-lvl">
+            <p>Quel est votre niveau en développement ?</p>
+            <div>
+                <input type="radio" name="niveau-dev" value="debutant">
+                <label for="niveau-dev">Débutant</label>
+                <input type="radio" name="niveau-dev" value="junior">
+                <label for="niveau-dev">Junior</label>
+                <input type="radio" name="niveau-dev" value="expert">
+                <label for="niveau-dev">Expert</label>
+            </div>
+        </div>
+        <p>Quel est votre niveau de connaissance dans les différents langages :</p>
+        <ul>
+            <li>
+                html /css :
+                <input type="radio" name="niveau-html-css" value="debutant">
+                <label for="niveau-html-css">Débutant</label>
+                <input type="radio" name="niveau-html-css" value="junior">
+                <label for="niveau-html-css">Junior</label>
+                <input type="radio" name="niveau-html-css" value="expert">
+                <label for="niveau-html-css">Expert</label>
+            </li>
+            <li>
+                Python :
+                <input type="radio" name="niveau-python" value="debutant">
+                <label for="niveau-python">Débutant</label>
+                <input type="radio" name="niveau-python" value="junior">
+                <label for="niveau-python">Junior</label>
+                <input type="radio" name="niveau-python" value="expert">
+                <label for="niveau-python">Expert</label>
+            </li>
+            <li>
+                PHP :
+                <input type="radio" name="niveau-php" value="debutant">
+                <label for="niveau-php">Débutant</label>
+                <input type="radio" name="niveau-php" value="junior">
+                <label for="niveau-php">Junior</label>
+                <input type="radio" name="niveau-php" value="expert">
+                <label for="niveau-php">Expert</label>
+            </li>
+            <li>
+                Java :
+                <input type="radio" name="niveau-java" value="debutant">
+                <label for="niveau-java">Débutant</label>
+                <input type="radio" name="niveau-java" value="junior">
+                <label for="niveau-java">Junior</label>
+                <input type="radio" name="niveau-java" value="expert">
+                <label for="niveau-java">Expert</label>
+            </li>
+            <li>
+                NodeJS :
+                <input type="radio" name="niveau-js" value="debutant">
+                <label for="niveau-js">Débutant</label>
+                <input type="radio" name="niveau-js" value="junior">
+                <label for="niveau-js">Junior</label>
+                <input type="radio" name="niveau-js" value="expert">
+                <label for="niveau-js">Expert</label>
+            </li>
+            <li>
+                ReactJs :
+                <input type="radio" name="niveau-reactjs" value="debutant">
+                <label for="niveau-reactjs">Débutant</label>
+                <input type="radio" name="niveau-reactjs" value="junior">
+                <label for="niveau-reactjs">Junior</label>
+                <input type="radio" name="niveau-reactjs" value="expert">
+                <label for="niveau-reactjs">Expert</label>
+            </li>
+            <li>
+                C# :
+                <input type="radio" name="niveau-c#" value="debutant">
+                <label for="niveau-c#">Débutant</label>
+                <input type="radio" name="niveau-c#" value="junior">
+                <label for="niveau-c#">Junior</label>
+                <input type="radio" name="niveau-c#" value="expert">
+                <label for="niveau-c#">Expert</label>
+            </li>
+        </ul>
+        <label for="os">Sur quel OS travaillez-vous ?</label>
+        <select name="os" id="os" required>
+            <option value=""></option>
+            <option value="linux">Linux</option>
+            <option value="mac">Mac</option>
+            <option value="windows">Windows</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Information liées à la promotion</h2>
+        <ul>
+            <li>
+                <label for="promotion">promotion beweb ?</label>
+                <select name="promo-1" id="promo-1">
+                    <option value=""></option>
+                </select>
+                <select name="promo-2" id="promo-2">
+                    <option value=""></option>
+                </select>
+            </li>
+        </ul>
+        <label for="url">Merci de nous faire parvenir votre URL TD_1 :</label>
+        <input type="text" name="url" placeholder="URL">
+        <p></p>
+        <p>Si vous avez des questions, vous pouvez nous les laisser en commentaire ci-dessous</p>
+        <textarea name="questions" id="questions" cols="80" rows="10"></textarea>
+        <br>
+        <input type="submit">
+    </section>
+    <p id="required-field">* Champs obligatoire</p>
+</body>
+</html>
