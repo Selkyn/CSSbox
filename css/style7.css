@@ -6,6 +6,12 @@ body {
     gap: 20px;
 }
 
+h2 {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -13,36 +19,33 @@ main {
     grid-template-rows: 0.15fr 0.5fr 0.15fr 2fr;
     border : 5px solid blueviolet;
     position: relative;
-    
 }
 
+/* Main container (purple) */
 #main-header {
     background-color: grey;
+    color: blueviolet;
 }
 
 #little-section {
     background-color: aqua;
 }
 
+header p {
+    color: blueviolet;
+    margin-left: 20px;
+}
 nav {
     background-color: darkgray;
 }
 
-footer {
-    width: 1000px;
-    height: 200px;
-    border: 5px solid cyan;
-    display: flex;
-    justify-content: center;
+#main-section h2 {
+    margin-top: 30px;
+    color: red;
 }
 
-#footer-section {
-    border: 5px solid greenyellow;
-    width: 700px;
-    margin: 5px;
-}
 
-/*Container*/
+/*Container Red*/
 .container {
     width: 700px;
     height: 725px;
@@ -61,14 +64,22 @@ footer {
     border : 5px solid yellow;
     grid-area: container-header;
     margin: 5px;
+    color: yellow;
 }
 
+/* container green */
 #container-section {
     border : 5px solid green;
     grid-area: container-section;
     display: flex;
     align-items: end;
     margin: 5px;
+    position: relative;
+}
+#container-section h2 {
+    position: absolute;
+    top: 5px;
+    color: green;
 }
 
 #container-article {
@@ -76,9 +87,11 @@ footer {
     height: 300px;
     width: 100%;
     margin: 5px;
+    color: blue;
 }
 
-#container-aside {
+/* container orange */
+aside {
     border : 5px solid orange;
     grid-area: container-aside;
     display: flex;
@@ -86,10 +99,47 @@ footer {
     margin: 5px;
 }
 
-#subscribe, #popular, #contributors {
+aside h2 {
+    margin: 15px auto;
+    color: orange;
+}
+
+.container-aside-div {
     border : 5px  solid blueviolet;
     height: 75px;
     text-align: center;
     margin: 5px;
+    display: grid;
+    place-content: center;
 }
 
+.container-aside-div h2{
+    color: blueviolet;
+}
+
+/* FOOTER */
+footer {
+    width: 1000px;
+    height: 200px;
+    border: 5px solid cyan;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: grey;
+}
+
+#footer-section {
+    border: 5px solid greenyellow;
+    width: 700px;
+    margin: 5px;
+    color: green;
+}
+
+#footer-section h2{
+    margin-top: 10px;
+}
+#footer-id {
+    position: absolute;
+    left: 5px;
+    color: cyan;
+}

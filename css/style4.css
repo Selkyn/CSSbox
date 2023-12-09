@@ -3,8 +3,7 @@
     margin: 0px;
 }
 body {
-    width: 1000px;
-    height: 650px;
+    height: 950px;
     display: grid;
     grid-template-rows: 0.5fr 0.2fr 3fr 0.5fr;
     border: 2px solid black;
@@ -20,11 +19,16 @@ nav {
 }
 
 main {
-    background-color: #f7c600;
-    width: 970px;
-    height: 430px;
-    margin: auto;
+    background-color: white;
+    padding: 20px;
 }
+
+section {
+    background-color: #f7c600;
+    width: 100%;
+    height: 100%;
+}
+
 footer {
     background-color: cyan;
 }

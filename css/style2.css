@@ -1,5 +1,4 @@
 body {
-    width: 1000px;
     height: 900px;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -11,6 +10,10 @@ body {
 header {
     background-color: #ff5252;
     grid-area: header;
+}
+
+header p {
+    margin: 0;
 }
 
 nav {

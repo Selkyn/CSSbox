@@ -1,5 +1,4 @@
 body {
-    width: 1000px;
     height: 900px;
     display: grid; 
     grid-template-columns: 0.5fr 2fr; 
@@ -7,18 +6,21 @@ body {
     grid-template-areas: 
       "header header"
       "nav main";
-   
 }
 
+header {
+    background-color: red;
+    grid-area: header;
+}
+
+header p {
+    margin: 0px;
+}
 
 main {
     background-color: green;
     grid-area:  main;
    
-}
-header {
-    background-color: red;
-    grid-area: header;
 }
 
 nav {

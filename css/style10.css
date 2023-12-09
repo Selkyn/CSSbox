@@ -11,6 +11,7 @@ h1 {
     font-size: 15px;
     margin: auto;
 }
+
 h2 {
     color: #7b2d53;
     text-align: center;
@@ -18,6 +19,7 @@ h2 {
     font-size: 30px;
     text-decoration: underline overline black;
 }
+
 li {
     line-height: 30px;
 }

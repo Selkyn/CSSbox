@@ -28,6 +28,7 @@ nav {
     align-items: center;
 }
 
+/* Section verte */
 #section1 {
     height: 500px;
     background-color: #8caf55;
@@ -53,6 +54,7 @@ nav {
     place-items: center;
 }
 
+/* Section jaune */
 #section2 {
     background-color: #dfd14a;
     height: 500px;
