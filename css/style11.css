@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid-template-rows: 0.5fr 0.2fr 0.5fr 2fr;
-    height: 900px;
+    height: 100vh;
 }
 
 header {
